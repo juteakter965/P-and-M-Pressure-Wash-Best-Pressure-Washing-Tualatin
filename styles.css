@@ -892,3 +892,210 @@ ul {
         break-inside: avoid;
     }
 }
+/* ========================================
+   Article Page Styles
+   ======================================== */
+.article-page {
+    background-color: var(--gray-50);
+}
+
+.article-hero {
+    background: linear-gradient(135deg, var(--primary-blue) 0%, var(--primary-blue-dark) 100%);
+    color: var(--white);
+    padding: var(--spacing-3xl) 0 var(--spacing-2xl);
+}
+
+.article-header {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.article-title {
+    font-size: 2.75rem;
+    color: var(--white);
+    margin-bottom: var(--spacing-lg);
+    line-height: 1.2;
+}
+
+.article-content {
+    background-color: var(--white);
+    padding: var(--spacing-3xl) 0;
+}
+
+.content-wrapper {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.content-section {
+    margin-bottom: var(--spacing-3xl);
+}
+
+.content-section h2 {
+    font-size: 2rem;
+    color: var(--gray-900);
+    margin-top: var(--spacing-2xl);
+    margin-bottom: var(--spacing-lg);
+    padding-bottom: var(--spacing-sm);
+    border-bottom: 3px solid var(--primary-blue);
+}
+
+.content-section h3 {
+    font-size: 1.5rem;
+    color: var(--gray-800);
+    margin-top: var(--spacing-xl);
+    margin-bottom: var(--spacing-md);
+}
+
+.content-section p {
+    font-size: 1.0625rem;
+    line-height: 1.8;
+    color: var(--gray-700);
+    margin-bottom: var(--spacing-lg);
+}
+
+.lead-paragraph {
+    font-size: 1.25rem;
+    line-height: 1.8;
+    color: var(--gray-800);
+    font-weight: 400;
+    margin-bottom: var(--spacing-xl);
+}
+
+.feature-list {
+    list-style: none;
+    padding-left: 0;
+    margin: var(--spacing-lg) 0;
+}
+
+.feature-list li {
+    padding-left: var(--spacing-xl);
+    margin-bottom: var(--spacing-md);
+    position: relative;
+    line-height: 1.7;
+    color: var(--gray-700);
+}
+
+.feature-list li:before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: var(--success-green);
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+/* CTA Section Styles */
+.cta-section {
+    background-color: var(--gray-100);
+    border-radius: var(--radius-lg);
+    padding: var(--spacing-3xl) var(--spacing-xl);
+    text-align: center;
+    margin: var(--spacing-3xl) 0;
+    box-shadow: var(--shadow-md);
+}
+
+.cta-heading {
+    font-size: 2rem;
+    color: var(--gray-900);
+    margin-bottom: var(--spacing-md);
+}
+
+.cta-subtext {
+    font-size: 1.125rem;
+    color: var(--gray-700);
+    margin-bottom: var(--spacing-xl);
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cta-location {
+    margin-top: var(--spacing-md);
+    font-size: 0.9rem;
+    color: var(--gray-600);
+    margin-bottom: 0;
+}
+
+/* FAQ Styles */
+.faq-container {
+    margin-top: var(--spacing-xl);
+}
+
+.faq-item {
+    background-color: var(--gray-50);
+    border-left: 4px solid var(--primary-blue);
+    padding: var(--spacing-xl);
+    margin-bottom: var(--spacing-lg);
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-sm);
+    transition: all var(--transition-fast);
+}
+
+.faq-item:hover {
+    box-shadow: var(--shadow-md);
+    border-left-color: var(--primary-blue-dark);
+}
+
+.faq-question {
+    font-size: 1.25rem;
+    color: var(--gray-900);
+    margin-bottom: var(--spacing-md);
+    font-family: var(--font-heading);
+}
+
+.faq-answer {
+    font-size: 1.0625rem;
+    line-height: 1.8;
+    color: var(--gray-700);
+    margin-bottom: 0;
+}
+
+/* Map Wrapper */
+.map-wrapper {
+    margin: var(--spacing-xl) 0;
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    box-shadow: var(--shadow-md);
+}
+
+/* Success Box */
+.success-box {
+    background-color: var(--success-green-light);
+    border-left: 4px solid var(--success-green);
+    padding: var(--spacing-xl);
+    border-radius: var(--radius-md);
+    margin: var(--spacing-xl) 0;
+}
+
+/* Highlight Box */
+.highlight-box {
+    background-color: var(--warning-yellow-light);
+    border-left: 4px solid var(--warning-yellow);
+    padding: var(--spacing-xl);
+    border-radius: var(--radius-md);
+    margin: var(--spacing-xl) 0;
+}
+
+/* Responsive Adjustments for Article Page */
+@media (max-width: 768px) {
+    .article-title {
+        font-size: 2rem;
+    }
+
+    .content-section h2 {
+        font-size: 1.5rem;
+    }
+
+    .content-section h3 {
+        font-size: 1.25rem;
+    }
+
+    .lead-paragraph {
+        font-size: 1.125rem;
+    }
+
+    .cta-heading {
+        font-size: 1.5rem;
+    }
+}
